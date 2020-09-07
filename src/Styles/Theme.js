@@ -8,4 +8,8 @@ export default {
   hoverRed: "#FF3635",
   dateGrey: "#AFAFAF",
   footerBlack: "#333333",
+  whiteBox: `border:${BOX_BORDER};
+             border-radius:${BORDER_RADIUS};
+             background-color:white;
+             `,
 };

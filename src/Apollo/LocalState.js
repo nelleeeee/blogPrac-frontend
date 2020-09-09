@@ -8,7 +8,7 @@ export const resolvers = {
       localStorage.setItem("token", token);
       cache.writeData({
         data: {
-          isLoggedIn: false,
+          isLoggedIn: true,
         },
       });
       return null;

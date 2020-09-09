@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import auth from "../Routes/auth";
+import Auth from "../Routes/Auth";
 import fullPost from "../Routes/fullPost";
 import detailPost from "../Routes/detailPost";
 import profile from "../Routes/profile";
@@ -16,7 +16,7 @@ const LoggedInRoutes = () => (
 const LoggedOutRoutes = () => (
   <>
     <Route exact path="/" component={fullPost} />
-    <Route exact path="/login" component={auth} />
+    <Route exact path="/login" component={Auth} />
   </>
 );
 

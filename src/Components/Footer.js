@@ -48,7 +48,7 @@ export default () => (
         <Link href="#">support</Link>
       </ListItem>
       <ListItem>
-        <Link href="#">support</Link>
+        <Link href="#/login">로긴</Link>
       </ListItem>
     </List>
     <Copyright>KKH {new Date().getFullYear()} &copy;</Copyright>

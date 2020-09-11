@@ -26,9 +26,8 @@ const LoggedOutRoutes = () => (
   </Switch>
 );
 
-const AppRouter = ({ isLoggedIn }) => (
-  <Switch> {isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />} </Switch>
-);
+const AppRouter = ({ isLoggedIn }) =>
+  isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
 
 AppRouter.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,

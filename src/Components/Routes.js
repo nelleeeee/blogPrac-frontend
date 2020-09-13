@@ -5,12 +5,12 @@ import Auth from "../Routes/Auth";
 import fullPost from "../Routes/fullPost";
 import detailPost from "../Routes/detailPost";
 import category from "../Routes/category";
-import search from "../Routes/search";
+import Search from "../Routes/Search";
 
 const LoggedInRoutes = () => (
   <Switch>
     <Route exact path="/" component={fullPost} />
-    <Route path="/search" component={search} />
+    <Route path="/search" component={Search} />
     <Route path="/:postTitle" component={detailPost} />
     <Route path="/:category" component={category} />
   </Switch>
@@ -20,7 +20,7 @@ const LoggedOutRoutes = () => (
   <Switch>
     <Route exact path="/" component={fullPost} />
     <Route exact path="/login" component={Auth} />
-    <Route path="/search" component={search} />
+    <Route path="/search" component={Search} />
     <Route path="/:postTitle" component={detailPost} />
     <Route path="/:category" component={category} />
   </Switch>
